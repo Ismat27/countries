@@ -70,6 +70,7 @@ img {
 
 .country-image img {
   height: 200px;
+  width: 305px;
 }
 .country-mini-details {
   padding: 20px;
@@ -85,9 +86,14 @@ img {
   margin-bottom: 20px;
   padding: 20px;
 }
-
+.search {
+  padding: 10px 20px;
+}
 input {
   border: none;
+  width: 85%;
+  padding: 10px 0;
+  margin: auto;
 }
 input:focus {
   outline: none;

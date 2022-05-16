@@ -7,7 +7,6 @@ const Top = ({searchCountry, handleSearch, handleNav, home, darkMode, toggleDark
 
         <section className={`bbg-white ${darkMode?'bbg-dark': null}`}>
             <Header
-                home={home}
                 darkMode={darkMode}
                 toggleDarkMode={toggleDarkMode}
             />
