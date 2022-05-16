@@ -22,6 +22,16 @@ a {
   background-color: hsl(0, 0%, 100%);
   color: hsl(200, 15%, 8%);
 }
+.bg-dark {
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(0, 0%, 100%);
+}
+.bbg-white {
+  background-color: hsl(0, 0%, 98%);
+}
+.bbg-dark {
+  background-color: hsl(207, 26%, 17%);
+}
 body {
   background-color: hsl(0, 0%, 98%);
   margin: 0 auto;
@@ -29,10 +39,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 header {
-  box-shadow: 0px 15px 10px -15px #111;
   margin-bottom: 40px;
 }
 .header {
+  padding-block: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -58,6 +68,9 @@ img {
   border-radius: 10px;
 }
 
+.country-image img {
+  height: 200px;
+}
 .country-mini-details {
   padding: 20px;
 }
@@ -68,14 +81,13 @@ img {
   margin-bottom: 20px;
 }
 .search, .select-continent, .continents {
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 5px;
   margin-bottom: 20px;
   padding: 20px;
 }
+
 input {
   border: none;
-  background-color: inherit;
 }
 input:focus {
   outline: none;

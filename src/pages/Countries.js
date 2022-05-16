@@ -1,11 +1,12 @@
 import Country from "../components/Country";
 
-const Countries = ({data}) => {
+const Countries = ({data, darkMode}) => {
     const countries = data.map((item) => {
         return (
             <Country
                 key={item.name}
                 dt={item}
+                darkMode={darkMode}
             />
         )
     })

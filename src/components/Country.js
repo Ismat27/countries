@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 
-const Country = ({dt}) => {
+const Country = ({dt, darkMode}) => {
     return (
         <Link to={`country/${dt.name}`}>
-            <div  className='country bg-white'>
+            <div  className={`country bg-white ${darkMode? 'bg-dark': ''}`}>
                     <div className="country-image">
-                        <img src={dt.flag} alt="country-image"/>
+                        <img src={dt.flag} alt="country"/>
                     </div>
                     <div className="country-mini-details">
                         <h3 className="country-name">{dt.name}</h3>
