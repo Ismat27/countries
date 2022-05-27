@@ -113,7 +113,7 @@ input:focus {
   top: 62px;
   display: none;
 }
-.abc:hover .continents {
+ .show-continent {
   display: block;
 }
 .select-continent {

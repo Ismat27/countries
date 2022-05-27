@@ -11,7 +11,12 @@ function App() {
   const [data, setData] = useState([])
   const [data2, setData2] = useState([])
   const [darkMode, setDarkMode] = useState(false)
+  const [showContinent, setShow] = useState(false)
 
+  const setShowContinent = () => {
+    setShow(prevData => !prevData)
+  }
+  
   const toggleDarkMode = () => {
     setDarkMode(prevMode => !prevMode)
   }
@@ -53,6 +58,8 @@ function App() {
            home={home}
            darkMode={darkMode}
            toggleDarkMode={toggleDarkMode}
+           showContinent={showContinent}
+           setShowContinent={setShowContinent}
           />
         }>
             <Route index element={<Countries searchCountry={searchCountry} data={data} darkMode={darkMode}/>}/>

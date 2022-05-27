@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 import Header from "../components/Header"
 const CountryDetail = ({data, darkMode, toggleDarkMode}) => {
     const {countryName} = useParams()
