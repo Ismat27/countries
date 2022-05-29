@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Country = ({dt, darkMode}) => {
     return (
-        <Link to={`country/${dt.name}`}>
+        <Link to={`/${dt.name}`}>
             <div  className={`country bg-white ${darkMode? 'bg-dark': ''}`}>
                     <div className="country-image">
                         <img src={dt.flag} alt="country"/>

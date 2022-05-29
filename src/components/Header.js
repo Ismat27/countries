@@ -6,7 +6,7 @@ const Header = ({darkMode, toggleDarkMode}) => {
         <header className={`bg-white ${darkMode?'bg-dark': ''} `}>
             <div className="header">
                 <h1><Link to={'/'}>Where in the world?</Link></h1>
-                <h1 className="btn" onClick={toggleDarkMode}>Dark mode</h1>
+                <h1 className="btn" onClick={toggleDarkMode}>{darkMode? 'Dark Mode': 'Light Mode'}</h1>
             </div>
         </header>
     )

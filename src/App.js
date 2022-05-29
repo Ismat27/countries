@@ -64,7 +64,7 @@ function App() {
         }>
             <Route index element={<Countries searchCountry={searchCountry} data={data} darkMode={darkMode}/>}/>
         </Route>
-        <Route path='country/:countryName' element={<CountryDetail data={data} darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>}/>
+        <Route path='/:countryName' element={<CountryDetail data={data} darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>}/>
       </Routes>
     </BrowserRouter>
   );
