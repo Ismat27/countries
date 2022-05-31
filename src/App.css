@@ -129,6 +129,39 @@ input:focus {
   padding: 10px;
 }
 
+/* for dark mode toggler slider */
+.mode-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.dark-toggle {
+  cursor: pointer;
+  padding: 5px;
+  display: inline-block;
+  width: 50px;
+  height: 30px;
+  background-color: #ccc;
+  border-radius: 15px;
+}
+
+.dark-toggle > span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%;
+  transition: .4s;
+}
+.toggle{
+  background-color: #01060a;
+}
+.toggle > span {
+  transform: translateX(20px);
+  background-color: #fff;
+}
+
+
 @media screen and (min-width: 800px) {
   .search-filter {
       display: flex;
