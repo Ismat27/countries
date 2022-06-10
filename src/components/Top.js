@@ -5,7 +5,7 @@ import SearchFilter from "./SearchFilter";
 const Top = ({searchCountry, handleSearch, handleNav, home, darkMode, toggleDarkMode, showContinent, setShowContinent}) => {
     return (
 
-        <section className={`bbg-white ${darkMode?'bbg-dark': null}`}>
+        <section className={`body bbg-white ${darkMode?'bbg-dark': null}`}>
             <Header
                 darkMode={darkMode}
                 toggleDarkMode={toggleDarkMode}

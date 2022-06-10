@@ -1,0 +1,28 @@
+.pages-container {
+    margin-top: auto;
+    padding-block: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+}
+.pages-container > li {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.pages-container .disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
+.pages-container > .page-item:hover {
+    background-color: #42f56c;
+}
+.pages-container .current-page {
+    background-color: #42f56c;
+}
+.pages-container > .disabled:hover {
+    background-color: gray;
+}

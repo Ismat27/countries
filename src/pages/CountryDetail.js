@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { Link, useNavigate, useParams } from "react-router-dom"
+import { useNavigate, useParams } from "react-router-dom"
 import Header from "../components/Header"
 import './CountryDetail.css';
 const CountryDetail = ({data, darkMode, toggleDarkMode}) => {
@@ -25,7 +25,7 @@ const CountryDetail = ({data, darkMode, toggleDarkMode}) => {
                 setCountry({...countryData[0], borders:['not available']})
             }
         })
-    }, [])
+    }, [countryName])
     return (
         
         <section className={`body bbg-white ${darkMode?'bbg-dark': ''}`}>
