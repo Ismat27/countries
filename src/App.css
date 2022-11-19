@@ -61,7 +61,8 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  justify-content: center;
+  /* justify-content: center; */
+  width: 90%;
   margin: 0 auto;
 }
 .country {
@@ -164,6 +165,17 @@ input:focus {
   background-color: #fff;
 }
 
+@media (min-width: 576px) {
+  .countries {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
+}
+@media (min-width: 768px) {
+  .countries {
+    grid-template-columns: repeat(3, auto);
+  }
+}
 
 @media screen and (min-width: 800px) {
   .search-filter {
@@ -176,5 +188,11 @@ input:focus {
   }
   .search {
       min-width: 400px;
+  }
+}
+
+@media (min-width: 992px) {
+  .countries {
+    grid-template-columns: repeat(4, auto);
   }
 }
