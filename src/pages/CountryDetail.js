@@ -2,11 +2,9 @@ import { useEffect, useState } from "react"
 import { useNavigate, useParams } from "react-router-dom"
 import Header from "../components/Header"
 import './CountryDetail.css';
-const CountryDetail = ({data, darkMode, toggleDarkMode}) => {
+const CountryDetail = ({ darkMode, toggleDarkMode }) => {
     const navigate = useNavigate()
     const {countryName} = useParams()
-    console.log(countryName);
-    // const country = data.find(item => item.name === countryName)
     const [country, setCountry] = useState({languages:[], currencies:[], borders:[]})
     const countryBorders = country.borders.map(border => {
         return <span className="border" key={border}>{border}</span>
@@ -19,12 +17,12 @@ const CountryDetail = ({data, darkMode, toggleDarkMode}) => {
         fetch(`https://restcountries.com/v2/name/${countryName}`)
         .then(response => response.json())
         .then(countryData => {
-            if (countryData[0].borders) {
-                setCountry(countryData[0])
-            }
-            else {
-                setCountry({...countryData[0], borders:['not available']})
-            }
+            const data = countryData[0]
+            setCountry({
+                ...data,
+                borders: data.borders || ['not available'],
+                currencies: data.currencies || ['not available']
+            })
         })
     }, [countryName])
     return (
