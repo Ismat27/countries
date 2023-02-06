@@ -68,14 +68,19 @@ img {
 .country {
   display: flex;
   flex-direction: column;
+  min-width: 100%;
   gap: 0;
   max-width: 320px;
   border-radius: 10px;
 }
 
+.countries > a {
+  flex-basis: 100%;
+}
+
 .country-image img {
   height: 200px;
-  width: 305px;
+  width: 100%;
 }
 .country-mini-details {
   padding: 20px;

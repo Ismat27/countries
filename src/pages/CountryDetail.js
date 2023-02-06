@@ -5,6 +5,7 @@ import './CountryDetail.css';
 const CountryDetail = ({data, darkMode, toggleDarkMode}) => {
     const navigate = useNavigate()
     const {countryName} = useParams()
+    console.log(countryName);
     // const country = data.find(item => item.name === countryName)
     const [country, setCountry] = useState({languages:[], currencies:[], borders:[]})
     const countryBorders = country.borders.map(border => {
